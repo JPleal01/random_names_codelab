@@ -167,7 +167,9 @@ class FavoritesPage extends StatelessWidget {
       );
     }
 
-    return ListView(
+    return GridView(
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 3,),
       children: [
         Padding(
           padding: const EdgeInsets.all(20),
@@ -204,7 +206,7 @@ class BigCard extends StatelessWidget {
 
       child: Padding(
         padding: const EdgeInsets.all(20.0),
-        child: Text(pair.asLowerCase, style: style, semanticsLabel: "${pair.first} ${pair.second}",),
+        child: Text(pair.asPascalCase, style: style, semanticsLabel: "${pair.first} ${pair.second}",),
       ),
     );
   }
