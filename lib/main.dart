@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => MyAppState(),
       child: MaterialApp(
-        title: 'Namer App',
+        title: 'Random Names',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           useMaterial3: true,
